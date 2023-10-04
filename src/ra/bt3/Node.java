@@ -1,30 +1,30 @@
 package ra.bt3;
 
-public class Node {
-    private int data;
-    private Node link;
+public class Node<T> {
+   private T value;
+   private Node<T> next;
 
     public Node() {
     }
 
-    public Node(int data, Node link) {
-        this.data = data;
-        this.link = link;
+    public Node(T value) {
+        this.value = value;
     }
 
-    public int getData() {
-        return data;
+    public T getValue() {
+        return value;
     }
 
-    public void setData(int data) {
-        this.data = data;
+    public void setValue(T value) {
+        this.value = value;
     }
 
-    public Node getLink() {
-        return link;
+    public Node<T> getNext() {
+        return next;
     }
 
-    public void setLink(Node link) {
-        this.link = link;
+    public void setNext(Node<T> next) {
+        this.next = next;
     }
+
 }
